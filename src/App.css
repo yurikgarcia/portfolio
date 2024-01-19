@@ -1,3 +1,5 @@
+/* App.css */
+
 body {
   margin: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,11 +21,16 @@ body {
 }
 
 .app-container {
-  background: hsla(213, 77%, 14%, 1);
-  background: linear-gradient(-90deg, hsla(213, 77%, 14%, 1) 35%, hsla(202, 27%, 45%, 1) 100%);
-  background: -moz-linear-gradient(-90deg, hsla(213, 77%, 14%, 1) 35%, hsla(202, 27%, 45%, 1) 100%); /* Rotated gradient 90 degrees to the left */
-  background: -webkit-linear-gradient(-90deg, hsla(213, 77%, 14%, 1) 35%, hsla(202, 27%, 45%, 1) 100%); /* Rotated gradient 90 degrees to the left */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#08203E", endColorstr="#557C93", GradientType=1);
+  background: hsla(136, 58%, 52%, 1);
+
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#3ECC64", GradientType=1 );
+
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -32,11 +39,21 @@ body {
   background-color: #fff; 
   min-height: 100vh;
   min-width: 100vw;
-    color: #000; 
-  }
+  color: #000; /* Black text color */
+}
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
 
+.logo.react {
+  margin-left: 20px;
+}
 
+h1, h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
 
-
-
+/* Rest of your existing styles */
