@@ -31,17 +31,16 @@ function FirstView() {
               src={YURIK}
               alt="Yurik Garcia"
               style={{
-                width: "50%", // Adjust the percentage as needed
+                width: "45%", // Adjust the percentage as needed
                 maxWidth: "200px", // Set a maximum width
                 height: "auto",
-                marginLeft: "-20px",
               }}
             />
             <img
               src={GARCIA}
               alt="Yurik Garcia"
               style={{
-                width: "50%", // Adjust the percentage as needed
+                width: "45%", // Adjust the percentage as needed
                 maxWidth: "200px", // Set a maximum width
                 height: "auto",
                 marginLeft: "-10px",

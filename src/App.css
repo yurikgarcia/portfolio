@@ -31,8 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(40,165,134);
-  background: linear-gradient(220deg, rgba(40,165,134,1) 44%, rgba(240,253,255,1) 100%);
+  background: rgb(40, 165, 134);
+  background: linear-gradient(
+    220deg,
+    rgba(40, 165, 134, 1) 44%,
+    rgba(240, 253, 255, 1) 100%
+  );
 
   min-height: 100vh;
   min-width: 100vw;
@@ -42,8 +46,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(243,238,231);
-  background: linear-gradient(220deg, rgba(243,238,231,1) 44%, rgba(240,253,255,1) 100%);
+  background: rgb(243, 238, 231);
+  background: linear-gradient(
+    220deg,
+    rgba(243, 238, 231, 1) 44%,
+    rgba(240, 253, 255, 1) 100%
+  );
 
   min-height: 100vh;
   min-width: 100vw;
@@ -121,15 +129,17 @@ body {
 
 .profile-info img {
   max-width: 100%;
+  
 }
 
 .profile-names {
   display: flex;
   align-items: center;
+  
 }
 
 .profile-names img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .profile-description {
@@ -139,7 +149,6 @@ body {
   width: 75%;
   margin: 0 auto;
 }
-
 
 .second-view {
   background-color: #fff;
