@@ -2,15 +2,20 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.invisible-background {
-  background-color: transparent;
+.app-container {
+  background: rgb(128,208,199);
+  background: -moz-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  background: -webkit-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  background: linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80d0c7",endColorstr="#0093e9",GradientType=1);
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.burger-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000; /* Ensure it's above other elements */
+.app-container, .second-view {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
 }
 
 body {
@@ -27,22 +32,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.app-container, .second-view {
-  text-align: center;
-  padding: 20px;
-  color: #fff;
+.burger-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; 
 }
 
-.app-container {
-  background: rgb(128,208,199);
-  background: -moz-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
-  background: -webkit-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
-  background: linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80d0c7",endColorstr="#0093e9",GradientType=1);
 
-  min-height: 100vh;
-  min-width: 100vw;
+.invisible-background {
+  background-color: transparent;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
 
 .second-view {
   background-color: #fff; 
