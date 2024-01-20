@@ -1,4 +1,17 @@
-/* App.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.invisible-background {
+  background-color: transparent;
+}
+
+.burger-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
 
 body {
   margin: 0;
@@ -21,15 +34,11 @@ body {
 }
 
 .app-container {
-  background: hsla(136, 58%, 52%, 1);
-
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
-  
-  background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(136, 58%, 52%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#3ECC64", GradientType=1 );
+  background: rgb(128,208,199);
+  background: -moz-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  background: -webkit-linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  background: linear-gradient(58deg, rgba(128,208,199,1) 27%, rgba(0,147,233,1) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80d0c7",endColorstr="#0093e9",GradientType=1);
 
   min-height: 100vh;
   min-width: 100vw;
@@ -42,18 +51,9 @@ body {
   color: #000; /* Black text color */
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-}
 
-.logo.react {
-  margin-left: 20px;
-}
 
-h1, h2 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-/* Rest of your existing styles */
+
+
+
