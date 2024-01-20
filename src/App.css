@@ -79,7 +79,6 @@ body {
   background-color: transparent;
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -90,10 +89,7 @@ body {
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>;
-  font-style: normal; */
 }
-
 
 @media screen and (max-width: 768px) {
   .profile-info {
@@ -103,12 +99,11 @@ body {
 
   .profile-info img {
     max-width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px; /* Add some margin between the images */
+    margin-bottom: 10px;
   }
 
   .profile-info img:nth-child(2) {
-    margin-left: 0; /* Reset margin for the second image */
+    margin-left: 0;
   }
 }
 
@@ -126,16 +121,15 @@ body {
 
 .profile-info img {
   max-width: 100%;
-  margin-left: 0;
 }
 
-.profile-name {
-  text-align: left;
-  margin-bottom: 0;
-  font-family: "Playfair Display SC", serif;
-  font-weight: 700;
-  font-optical-sizing: auto;
-  font-size: 6vw;
+.profile-names {
+  display: flex;
+  align-items: center;
+}
+
+.profile-names img {
+  max-width: 100%;
 }
 
 .profile-description {
@@ -151,5 +145,5 @@ body {
   background-color: #fff;
   min-height: 100vh;
   min-width: 100vw;
-  color: #000; 
+  color: #000;
 }
