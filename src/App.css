@@ -1,66 +1,39 @@
-.app-container-blue {
+.avatar-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(128, 208, 199);
-  background: -moz-linear-gradient(
-    58deg,
-    rgba(128, 208, 199, 1) 27%,
-    rgba(0, 147, 233, 1) 81%
-  );
-  background: -webkit-linear-gradient(
-    58deg,
-    rgba(128, 208, 199, 1) 27%,
-    rgba(0, 147, 233, 1) 81%
-  );
-  background: linear-gradient(
-    58deg,
-    rgba(128, 208, 199, 1) 27%,
-    rgba(0, 147, 233, 1) 81%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(
-    startColorstr="#80d0c7",
-    endColorstr="#0093e9",
-    GradientType=1
-  );
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.app-container-green {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(40, 165, 134);
-  background: linear-gradient(
-    220deg,
-    rgba(40, 165, 134, 1) 44%,
-    rgba(240, 253, 255, 1) 100%
-  );
-
-  min-height: 100vh;
-  min-width: 100vw;
+  justify-content: flex-end;
+  align-items: center; /* Optional: align the image vertically in the center */
+  margin-top: 10vh
 }
 
 .app-container-tan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgb(243, 238, 231);
-  background: linear-gradient(
-    220deg,
-    rgba(243, 238, 231, 1) 44%,
-    rgba(240, 253, 255, 1) 100%
-  );
-
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  align-items: flex-start; /* Align to the left */
+  background: rgb(219, 202, 173); /* Updated tan color */
+  background: linear-gradient(220deg, rgba(219, 202, 173, 1) 44%, rgba(240, 253, 255, 1) 100%);
   min-height: 100vh;
   min-width: 100vw;
 }
 
+
 .center-text {
-  text-align: center;
+  text-align: left; /* Updated alignment to left */
   color: #fff;
 }
+
+.col-span-1 {
+  width: 100vw;
+}
+
+
+.col-span-2 {
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+}
+
 
 body {
   margin: 0;
@@ -99,60 +72,79 @@ body {
   font-optical-sizing: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .profile-info {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-info img {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .profile-info img:nth-child(2) {
-    margin-left: 0;
+@media screen and (min-width: 769px) {
+  .profile-names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 10px; /* Adjust the gap between images */
+    align-items: flex-start; /* Align images to the left */
+    margin-bottom: 0; /* Updated margin */
   }
 }
 
 .profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 15px; /* Adjust the gap between sections */
+  height: 80vh;
   margin-top: 15vh;
+  margin-left: 5vh
 }
 
 .profile-info {
-  display: flex;
-  align-items: center;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.profile-info img {
-  max-width: 100%;
-  
+
+
+.rock-salt-regular {
+  font-family: "Rock Salt", sans-serif; 
+  font-weight: 400;
+  font-style: normal;
 }
 
-.profile-names {
-  display: flex;
-  align-items: center;
-  
-}
-
-.profile-names img {
-  max-width: 90%;
-}
 
 .profile-description {
   text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-style: italic;
   color: #555;
-  width: 75%;
-  margin: 0 auto;
+  margin-top: 1vh;
+}
+
+.primary-color {
+  color: rgba(40, 165, 134, 1);
 }
 
 .second-view {
   background-color: #fff;
   min-height: 100vh;
   min-width: 100vw;
-  color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+  .profile-container {
+    margin-left: 5vw; /* Added margin-left for larger screens */
+  }
+
+  .profile-names {
+    grid-template-columns: 1fr; /* Single column layout for larger screens */
+    gap: 0; /* Remove the gap between images */
+    margin-bottom: 0;
+  }
+
+  .profile-description {
+    width: 75%;
+    margin-top: 2vh;
+  }
+
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
 }
