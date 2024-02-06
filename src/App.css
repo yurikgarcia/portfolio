@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center; /* Optional: align the image vertically in the center */
-  margin-top: 10vh
+  margin-top: 5vh
 }
 
 .app-container-tan {
@@ -22,7 +22,7 @@
 }
 
 .col-span-1 {
-  width: 100vw;
+  width: 50vw;
 }
 
 
@@ -56,9 +56,16 @@ body {
   z-index: 1000;
 }
 
+.fade-in-button {
+  transition: background-color 1.5s ease; 
+  margin-top: 1vh;
+  margin-right: 5vw;
+}
+
 .invisible-background {
   background-color: transparent;
 }
+
 
 .navbar {
   position: fixed;
@@ -70,6 +77,44 @@ body {
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+}
+
+.shelf_double img {
+  transition: filter 0.3s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions for the shadow and slower elevation effect */
+}
+
+.shelf_double img:hover {
+  filter: drop-shadow(0 12px 14px rgba(26, 115, 232, 0.8)); /* Updated to the desired shadow color */
+  transform: translateY(-25px); /* Adjust the elevation (negative value moves the image higher) */
+}
+
+
+.caprasimo {
+  font-family: 'Caprasimo', serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.app-description {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 1vh;
+  font-size: 2.75vh
+}
+
+.app-roles {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+  margin-top: 1vh;
+  font-size: 1.75vh
 }
 
 @media screen and (min-width: 769px) {
@@ -86,7 +131,7 @@ body {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout */
   gap: 15px; /* Adjust the gap between sections */
-  height: 80vh;
+  /* height: 80vh; */
   margin-top: 15vh;
   margin-left: 5vh
 }
@@ -121,7 +166,7 @@ body {
 }
 
 .second-view {
-  background-color: #fff;
+  background-color: #FBFCF8;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -144,7 +189,6 @@ body {
 
   .roboto-regular {
     font-family: "Roboto", sans-serif;
-    font-weight: 800;
     font-style: normal;
   }
 }

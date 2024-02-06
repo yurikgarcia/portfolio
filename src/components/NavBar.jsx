@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
   return (
-    <nav className="sticky z-10 bg-white backdrop-filter backdrop-blur-3xl bg-opacity-30 rounded-2xl border max-w-xs">
+    <nav className="sticky z-10 bg-black/5 backdrop-filter backdrop-blur-3xl bg-opacity-30 rounded-2xl border max-w-xs">
       <div className="max-w-5xl mx-auto px-4 ">
         <div className="flex items-center justify-end h-16">
           <div className="flex space-x-4 text-black ">
