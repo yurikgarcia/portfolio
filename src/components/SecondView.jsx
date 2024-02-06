@@ -1,10 +1,13 @@
 import React from "react";
 import "../App.css";
 import Footer from "./Footer";
+import beneDouble from "../assets/beneDouble.png";
+import ezDouble from "../assets/ezDouble.png";
+import ezLogo from "../assets/ezLogo.png";
 import shelf_double from "../assets/shelf_double.png";
 import shelf_logo from "../assets/shelf_logo.png";
 
-function FirstView() {
+function SecondView() {
   return (
     <div
       className="second-view"
@@ -12,11 +15,12 @@ function FirstView() {
         display: "flex",
         justifyContent: "center",
         height: "100vh",
+        flexDirection: "column",
       }}
     >
       <div
         className="content-container"
-        style={{ width: "80%", display: "flex", marginTop: "5vh"}}
+        style={{ width: "80%", display: "flex",}}
       >
         <div className="shelf_double" style={{ flex: 1 }}>
           <img
@@ -53,9 +57,82 @@ function FirstView() {
           <p className="app-roles">  FULL-STACK SOFTWARE DEVELOPER // UX & UI DESIGN // PRODUCT MANAGER </p>
         </div>
       </div>
+      <div
+        className="content-container"
+        style={{ width: "80%", display: "flex", marginTop: "5vh"}}
+      >
+        <div style={{ flex: 1, color: "black", marginLeft: '5vw' }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: "4.5vh",
+            }}
+          >
+            <img
+              src={ezLogo}
+              alt="ez pass logo"
+              style={{
+                maxWidth: "50px",
+              }}
+            />
+            <h1 className="caprasimo">EzPass</h1>
+          </div>
+          <p className="app-description">
+            An inventory management application that effortlessly manages your
+            assets digitally, whether you’re in the warehouse or on the go!
+          </p>
+          <p className="app-roles">  FULL-STACK SOFTWARE DEVELOPER // UX & UI DESIGN // PRODUCT MANAGER </p>
+        </div>
+        <div className="ez_double" style={{ flex: 1 }}>
+          <img
+            src={ezDouble}
+            alt="ez pass logo"
+            style={{
+              width: "100%",
+              maxWidth: "250vh",
+            }}
+          />
+        </div>
+      </div>
+      <div
+        className="content-container"
+        style={{ width: "80%", display: "flex",}}
+      >
+        <div className="bene_double" style={{ flex: 1 }}>
+          <img
+            src={beneDouble}
+            alt="bene double"
+            style={{
+              width: "100%",
+              maxWidth: "250vh",
+            }}
+          />
+        </div>
+        <div style={{ flex: 1, color: "black" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: "4.5vh",
+            }}
+          >
+      
+            <h1 className="companyName1">bene</h1>
+            <h1 className="companyName2">Nav</h1>
+          </div>
+          <p className="app-description">
+            An inventory management application that effortlessly manages your
+            assets digitally, whether you’re in the warehouse or on the go!
+          </p>
+          <p className="app-roles">  FULL-STACK SOFTWARE DEVELOPER // UX & UI DESIGN // PRODUCT MANAGER </p>
+        </div>
+      </div>
       <Footer />
     </div>
   );
 }
 
-export default FirstView;
+export default SecondView;

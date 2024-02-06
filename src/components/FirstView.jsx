@@ -42,7 +42,7 @@ function FirstView() {
               <p style={{ fontSize: "1.75vw" }}>
                 Full Stack Software Engineer blending precision in code with a
                 passion for innovation, crafting elegant solutions, and
-                fostering a collaborative culture in every project.
+                fostering a collaborative culture!
               </p>
               <div
                 style={{

@@ -56,6 +56,16 @@ body {
   z-index: 1000;
 }
 
+.companyName1 {
+  color: #1877F2;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.companyName2 {
+  color: #2DCE89
+}
+
 .fade-in-button {
   transition: background-color 1.5s ease; 
   margin-top: 1vh;
@@ -77,6 +87,25 @@ body {
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+  
+}
+
+.bene_double img {
+  transition: filter 0.3s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions for the shadow and slower elevation effect */
+}
+
+.bene_double img:hover {
+  filter: drop-shadow(0 12px 14px rgba(24, 119, 242, 0.8)); /* Updated to the desired shadow color */
+  transform: translateY(-25px); /* Adjust the elevation (negative value moves the image higher) */
+}
+
+.ez_double img {
+  transition: filter 0.3s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions for the shadow and slower elevation effect */
+}
+
+.ez_double img:hover {
+  filter: drop-shadow(0 12px 14px rgba(100, 200, 169, 0.8)); /* Updated to the desired shadow color */
+  transform: translateY(-25px); /* Adjust the elevation (negative value moves the image higher) */
 }
 
 .shelf_double img {
@@ -84,7 +113,7 @@ body {
 }
 
 .shelf_double img:hover {
-  filter: drop-shadow(0 12px 14px rgba(26, 115, 232, 0.8)); /* Updated to the desired shadow color */
+  filter: drop-shadow(0 12px 14px rgba(225, 102, 0, 0.8)); /* Updated to the desired shadow color */
   transform: translateY(-25px); /* Adjust the elevation (negative value moves the image higher) */
 }
 
@@ -167,7 +196,7 @@ body {
 
 .second-view {
   background-color: #FBFCF8;
-  min-height: 100vh;
+  min-height: 175vh;
   min-width: 100vw;
 }
 
